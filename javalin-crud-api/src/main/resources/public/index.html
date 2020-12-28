@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>Check your reservation:</h2>
+<form action="/check-reservation" method="get">
+    Choose day
+    <select name="day" id="">
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+    </select>
+    <br>
+    <button>Submit</button>
+</form>
+
+<br>
+
+<h2>Make reservation:</h2>
+<form action="/make-reservation" method="post">
+    Choose day
+    <select name="day">
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+    </select>
+    <br>
+    Choose time
+    <select name="time">
+        <option value="8:00 PM">8:00 PM</option>
+        <option value="9:00 PM">9:00 PM</option>
+    </select>
+    <br>
+    <button>Submit</button>
+</form>
+
+<h1>Upload example</h1>
+<form action="/upload-example" method="post" enctype="multipart/form-data">
+    <input type="file" name="files" multiple>
+    <button>Submit</button>
+</form>
+
+</body>
+</html>
